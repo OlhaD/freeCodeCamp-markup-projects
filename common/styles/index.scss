@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+@mixin flex($justify-content, $align-items, $flex-direction: row){ 
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
