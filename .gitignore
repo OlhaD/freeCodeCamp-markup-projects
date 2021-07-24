@@ -1,3 +1,4 @@
 *-lock.json
 tribute-page/node_modules/
 survey-form/node_modules/
+*.log
