@@ -15,7 +15,7 @@ Projects:
 
  3. "Product Landing Page"
      Requirements: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page \
-     Live URL: 
+     Live URL: https://fcc-product-landing-page.web.app/
 
  4. "Technical Documentation Page"
      Requirements: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page \
