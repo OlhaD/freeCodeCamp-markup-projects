@@ -1,0 +1,159 @@
+@import "../../common/styles/index.scss";
+
+$backgroundColor: rgb(190, 49, 68);
+$welcomeBackgroundColor: rgb(30, 30, 32);
+$projectsBackgroundColor: rgb(69, 86, 125);
+$color: rgb(255, 255, 255);
+$altColor: rgb(0, 0, 0);
+
+h1,
+h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: $backgroundColor;
+
+    .navbar-item {
+        margin: 0 1.5rem;
+
+        a {
+            text-decoration: none;
+            color: $color;
+            font-size: x-large;
+        }
+    }
+}
+
+#main {
+    margin-top: 4rem;
+    height: 100%;
+
+    #welcome-section {
+        height: calc(100vh - 4rem);
+        background-color: $welcomeBackgroundColor;
+        color: $color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+
+        h4 {
+            color: $backgroundColor;
+            font-style: italic;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #welcome-section {
+            padding: 0 3rem;
+            text-align: center;
+        }
+    }
+
+    #projects {
+        background-color: $projectsBackgroundColor;
+        padding-top: 3rem;
+
+        header h2 {
+            color: $color;
+            border-bottom: 0.2rem solid $color;
+            font-weight: normal;
+            text-align: center;
+            margin: 0 auto 6rem auto;
+            max-width: 640px;
+        }
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-gap: 3rem;
+            margin: 0 3rem 1rem 3rem;
+
+            .project-tile {
+                background-color: $altColor;
+
+                img {
+                    width: 100%;
+                    height: calc(100% - 5.5rem);
+                    object-fit: cover;
+                }
+
+                .project-footer {
+                    background-color: $altColor;
+                    color: $color;
+                    height: 5rem;
+                    font-size: large;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        @media (max-width: 500px) {
+            .projects-list {
+                margin: 10px;
+            }
+        }
+
+        #show-all-container {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1rem;
+
+            #show-all {
+                width: 6rem;
+                height: 3rem;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    color: $color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #footer {
+        background-color: $altColor;
+        border-top: 2px $mainBackgroundColor solid;
+        color: $color;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+    }
+
+    @media (max-width: 500px) {
+        #footer {
+            flex-direction: column;
+            padding: 1rem;
+            align-items: flex-start;
+
+            h4 {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}
