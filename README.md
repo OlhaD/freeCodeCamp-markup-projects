@@ -23,4 +23,4 @@ Projects:
      
  5. "Personal Portfolio Webpage"
      Requirements: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage \
-     Live URL: 
+     Live URL: https://fcc-personal-portfolio-58fda.web.app/
