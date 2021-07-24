@@ -19,7 +19,7 @@ Projects:
 
  4. "Technical Documentation Page"
      Requirements: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page \
-     Live URL: 
+     Live URL: https://fcc-technical-documentation.web.app/
      
  5. "Personal Portfolio Webpage"
      Requirements: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage \
